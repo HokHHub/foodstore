@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url(./fonts/Rubik.ttf),
+    url(./fonts/Rubik.eot),
+    url(./fonts/Rubik.woff),
+    url(./fonts/Rubik.otf),
+    url(./fonts/Rubik.woff2),
+    url(./fonts/Rubik.eot);
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(215, 215, 215);
+}
+
+.foodcard{
+    margin: 20px auto;
+    width: 272px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.foodcard__img{
+    max-width: 272px;
+    border-radius: 4px;
+}
+
+.container{
+    padding: 8px;
+    max-width: 256px;
+    width: 100%;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__card{
+    color: #414141;
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+}
+
+.card__type{
+    color: #BFBFBF;
+    font-family: 'Rubik';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    margin-bottom: 8px;
+}
+
+.price__noncard{
+    color: #606060;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.title__product{
+    color: #414141;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 8px;
+}
+
+.rating{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.rating__fullstar{
+    margin-right: 4px;
+}
+
+.rating__star{
+    margin-right: 4px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foodcard__btn{
+    display: flex;
+    /* margin: 0 auto; */
+    padding: 8px;
+    justify-content: center;
+    width: 256px;
+    color: #70C05B;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #70C05B;
+}
