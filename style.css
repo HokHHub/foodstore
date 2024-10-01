@@ -109,4 +109,66 @@ body{
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid #70C05B;
+    transition: 0.3s;
+}
+
+.foodcard__btn:hover{
+    display: flex;
+    /* margin: 0 auto; */
+    padding: 8px;
+    justify-content: center;
+    width: 256px;
+    color: white;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    background-color: #70C05B;
+    border-radius: 4px;
+    border: 1px solid #70C05B;
+}
+
+.foodcard__discount{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: inline-flex;
+    padding: 4px 8px;
+    align-items: flex-start;
+    gap: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    border-radius: 4px;
+    background: #F63;
+}
+
+.foodcard__favourite{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    /* padding: 8px; */
+    gap: 8px;
+    border-radius: 4px;
+    opacity: 0.5;
+    background: #F3F2F1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.foodcard__favourite:hover{
+    background: red;
+    opacity: 0.5;
+}
+
+.foodcard__top{
+    position: relative;
 }
