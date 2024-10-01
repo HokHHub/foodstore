@@ -49,13 +49,16 @@ body{
     line-height: 150%; /* 27px */
 }
 
+.card{
+    margin-bottom: 8px;
+}
+
 .card__type{
     color: #BFBFBF;
     font-family: 'Rubik';
     font-size: 12px;
     font-weight: 400;
     line-height: 150%; /* 18px */
-    margin-bottom: 8px;
 }
 
 .price__noncard{
@@ -66,13 +69,16 @@ body{
     line-height: 150%; /* 24px */
 }
 
+.title{
+    margin-bottom: 8px;
+}
+
 .title__product{
     color: #414141;
     font-family: 'Rubik';
     font-size: 16px;
     font-weight: 400;
     line-height: 150%; /* 24px */
-    margin-bottom: 8px;
 }
 
 .rating{
