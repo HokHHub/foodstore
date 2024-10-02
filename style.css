@@ -259,4 +259,8 @@ hr{
         display: flex;
         justify-content: center;
     }
+
+    .foodcard{
+        margin-bottom: 20px;
+    }
 }
