@@ -19,6 +19,7 @@ body{
 
 .cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 35px;
     /* max-width: 1650px; */
@@ -239,4 +240,20 @@ hr{
 
 .footer{
     background-color: rgba(91, 158, 57, 0.700);
+}
+
+@media screen and (max-width:554px) {
+    .cards{
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    .head__links{
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    .mealtime{
+        margin-left: 21px;
+    }
 }
