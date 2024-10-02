@@ -246,6 +246,7 @@ hr{
     .cards{
         padding-left: 21px;
         padding-right: 21px;
+        justify-content: center;
     }
 
     .head__links{
@@ -254,6 +255,8 @@ hr{
     }
 
     .mealtime{
-        margin-left: 21px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
     }
 }
