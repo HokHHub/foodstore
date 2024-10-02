@@ -10,15 +10,71 @@
 
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(247, 255, 211, 0.19);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    /* max-width: 1650px; */
+    width: 100%;
+    padding-left: 141px;
+    padding-right: 141px;
+}
+
+.head{
+    margin-bottom: 18px;
+}
+
+.head__links{
+    padding-left: 141px;
+    padding-right: 141px;
+}
+
+.head__name{
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: rgb(75, 131, 47);
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.head__link{
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: rgba(91, 158, 57, 0.700);
+    margin-right: 15px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.head__link:hover{
+    color: rgb(75, 131, 47);
+}
+
+hr{
+    border: 1px solid rgb(198, 198, 198);
+    /* max-width: 1510px; */
+}
+
+.mealtime{
+    margin-left: 141px;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(75, 131, 47);
+    margin-bottom: 8px
 }
 
 .foodcard{
-    margin: 20px auto;
-    width: 272px;
+    /* display: block; */
+    /* margin: 30px auto; */
+    max-width: 272px;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
@@ -31,11 +87,12 @@ body{
     display: block;
     object-fit: cover;
     height: 160px;
+    width: 272px;
 }
 
 .info{
     padding: 8px;
-    max-width: 256px;
+    max-width: 272px;
     width: 100%;
 }
 
@@ -164,11 +221,22 @@ body{
     transition: 0.3s;
 }
 
-.foodcard__favourite:hover{
-    background: red;
-    opacity: 0.5;
-}
-
 .foodcard__top{
     position: relative;
+}
+
+.heart svg{
+    display: flex;
+    color: transparent;
+    stroke: #414141;
+    transition: 0.3s;
+}
+
+.heart:hover svg{
+    stroke: red;
+    color: red;
+}
+
+.footer{
+    background-color: rgba(91, 158, 57, 0.700);
 }

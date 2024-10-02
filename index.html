@@ -5,47 +5,679 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Store</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <main>
-        <article class="foodcard">
-            <div class="foodcard__top">
-                <img class="foodcard__img" src="./img/pancake.webp" alt="блинчики с мясом">
-                <div class="foodcard__discount">
-                    <p>-50%</p>
-                </div>
-                <div class="foodcard__favourite">
-                    <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
-                    </svg> -->
-                    <img src="./img/heart.svg" alt="кнопка избранное">
-                </div>
+        <header class="head">
+            <div class="head__links">
+                <a class="head__name" href="#">QuickBite</a>
+                <a class="head__link" href="#breakfest">Завтраки</a>
+                <a class="head__link" href="#lunch">Обеды</a>
+                <a class="head__link" href="#dinner">Ужины</a>
+                <hr>
             </div>
-            <div class="info">
-                <div class="foodcard__price price">
-                    <div class="price__withcard">
-                        <p class="price__card">44,50 ₽</p>
-                        <p class="card__type">С картой</p>
+        </header>
+
+        <h2 class="mealtime" id="breakfest">Завтрак</h2>
+        <div class="cards">
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/meatloaf.webp" alt="блинчики с мясом">
+                    <div class="foodcard__discount">
+                        <p>-50%</p>
                     </div>
-                    <div class="price__noncard">
-                        <p class="price__noncard">50,50 ₽</p>
-                        <p class="card__type">Обычная</p>
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">44,50 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">50,50 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
 
-                <p class="title__product">Г/Ц Блинчики с мясом вес, <br> Россия</p>
+                    <p class="title__product">Г/Ц Блинчики с мясом 50г, <br> Россия</p>
 
-                <div class="foodcard__rating rating">
-                    <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
-                    <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
-                    <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
-                    <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
-                    <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
                 </div>
+            </article>
 
-                <button class="foodcard__btn">В корзину</button>
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/tiramisu.jpg" alt="тирамису">
+                    <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div>
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">140,40 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">180,50 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Торт тирамису 200г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/yogurt.jpg" alt="тирамису">
+                    <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div>
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">100,40 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">150,40 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Йогурт "пазл" с ягодами 140г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/pancake.jpg" alt="Панкейки с голубикой">
+                    <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div>
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">82,90 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">120,50 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Панкейки с голубикой 120г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+            
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/egg.webp" alt="Яичница с беконом">
+                    <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div>
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">71,20 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">91,10 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Яичница с беконом 150г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="mealtime" id="lunch">Обед</h2>
+        <div class="cards">
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/meatballs.jpg" alt="Фрикадельки с картошкой фри">
+                    <!-- <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div> -->
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">120,70 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">190,00 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Фрикадельки с фри 270г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/sasauge.webp" alt="Фрикадельки с картошкой фри">
+                    <!-- <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div> -->
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">140,70 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">210,00 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Сосиски с тушеной капустой 250г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/fish.jpg" alt="форель с овощами">
+                    <!-- <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div> -->
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">220,50 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">270,30 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Форель с овощами 370г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/shawerma.jpg" alt="форель с овощами">
+                    <!-- <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div> -->
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">200,50 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">250,30 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Шаурма куриная 200г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+            
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/soup.jpg" alt="Крем-суп с грибами">
+                    <!-- <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div> -->
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">100,00 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">145,20 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Крем-суп с грибами 250г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="mealtime" id="dinner">Ужин</h2>
+        <div class="cards">
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/chop.jpg" alt="Говяжья отбивная">
+                    <!-- <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div> -->
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">135,20 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">160,00 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Говяжья отбивная 200г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/poke.webp" alt="Говяжья отбивная">
+                    <!-- <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div> -->
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">170,10 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">230,40 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Поке с лососем 220г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/pasta.jpg" alt="макароны по-флотски">
+                    <!-- <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div> -->
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">170,30 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">210,10 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Макароны по-флотски 250г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+            
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/pizza.webp" alt="Пицца маргарита">
+                    <!-- <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div> -->
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">470,00 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">540,20 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Пицца Маргарита 400г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+        
+
+            <article class="foodcard">
+                <div class="foodcard__top">
+                    <img class="foodcard__img" src="./img/plov.jpeg" alt="Пицца маргарита">
+                    <!-- <div class="foodcard__discount">
+                        <p>-50%</p>
+                    </div> -->
+                    <div class="foodcard__favourite">
+                        <!-- <svg class="foodcard__favourite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7046 4.25644C13.8299 3.13067 15.3564 2.49817 16.9482 2.49817C18.5399 2.49817 20.0664 3.13063 21.1916 4.25636C22.3174 5.38164 22.95 6.90829 22.95 8.49999C22.95 10.0917 22.3175 11.6183 21.1917 12.7435C21.1917 12.7436 21.1917 12.7435 21.1917 12.7435L12.3517 21.5835C12.1565 21.7788 11.8399 21.7788 11.6446 21.5835L2.80461 12.7435C0.460963 10.3999 0.460963 6.60009 2.80461 4.25644C5.14826 1.91279 8.94807 1.91279 11.2917 4.25644L11.9982 4.96289L12.7046 4.25644C12.7046 4.25641 12.7046 4.25647 12.7046 4.25644ZM16.9482 3.49817C15.6217 3.49817 14.3496 4.02528 13.4118 4.96346L12.3517 6.02355C12.258 6.11732 12.1308 6.16999 11.9982 6.16999C11.8656 6.16999 11.7384 6.11732 11.6446 6.02355L10.5846 4.96355C8.63149 3.01042 5.46484 3.01042 3.51172 4.96355C1.55859 6.91667 1.55859 10.0833 3.51172 12.0364L11.9982 20.5229L20.4846 12.0364C21.4228 11.0987 21.95 9.82648 21.95 8.49999C21.95 7.17351 21.4229 5.90138 20.4847 4.96363C19.5469 4.02544 18.2747 3.49817 16.9482 3.49817Z" fill="#414141"/>
+                        </svg> -->
+                        <div class="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="foodcard__price price">
+                        <div class="price__withcard">
+                            <p class="price__card">190,00 ₽</p>
+                            <p class="card__type">С картой</p>
+                        </div>
+                        <div class="price__noncard">
+                            <p class="price__noncard">230,90 ₽</p>
+                            <p class="card__type">Обычная</p>
+                        </div>
+                    </div>
+
+                    <p class="title__product">Пицца Маргарита 350г, <br> Россия</p>
+
+                    <div class="foodcard__rating rating">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star star_orange" src="./img/fullstar.svg" alt="заполненная звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/fullstar.svg" alt="пустая звезда рейтинга">
+                        <img class="rating__star" src="./img/star.svg" alt="пустая звезда рейтинга">
+                    </div>
+                    <button class="foodcard__btn">В корзину</button>
+                </div>
+            </article>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+
             </div>
-        </article>
+        </footer>
     </main>
 </body>
 </html>
